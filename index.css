@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Tenor+Sans|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Trirong);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 10px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #444;}
+.menu-main a.current, .menu-main a:hover{color: #d0b97d;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #d0b97d;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+}
+
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+font-family: 'Roboto', sans-serif;}
+
+header {
+   position: sticky; /* Приклеиваем заголовок */
+  top: 0; /* К верхнему краю родителя */
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+    background: #d0b97d;
+  padding: 20px 10px;
+}
+
+.wrap-logo {
+  margin-left: 40%;
+   font-family: "Trirong", serif;
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  font-family:  'PT Serif', serif;
+  margin-right: 20px;
+  color: #212121;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 25px;
+}
+
+header a:hover {
+  color: #c4890a;
+}
+
+header a.active {
+  color: #c4890a;
+}
+a:visited {
+  color: #444;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  }
+
+
+.wrapper{
+  display: flex;
+
+  /*position: sticky; !* Приклеиваем заголовок *!*/
+  /*top: 0; !* К верхнему краю родителя *!*/
+
+
+  /*position: sticky;*/
+  /*top: 0;*/
+  /*min-height: 2em;*/
+  /*background: lightpink;*/
+
+
+}
+* {box-sizing: border-box; margin: 0; }
+.widget {
+  display: block;
+  padding: 20px 30px;
+  background: white;
+  font-family:  'PT Serif', serif;
+
+  position: fixed;
+  top: 110px;
+
+
+}
+
+.widget-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border-left: 2px solid #d0b97d;
+}
+.widget-list {
+  padding: 0;
+  list-style: none;
+}
+.widget-list a:before {
+  content: "\2014";
+  margin-right: 14px;
+}
+.widget-list a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  padding: 6px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #444;
+  transition: .3s linear;
+}
+.widget-list a:hover {color: #b99d61;}
+
+.arrow a:hover,
+.arrow a:active,
+.arrow a:focus {
+  color: #0091d9;
+  text-decoration: none;
+}
+
+
+.arrow a:hover,
+.arrow a:active,
+.arrow a:focus {
+  color: #ff6163;
+}
+
+
+.forimg{
+  width:900px;
+  height:270px;
+}
+
+body {
+  font: 16px Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.slider-container {
+  margin-left: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.slider {
+  display: block;
+  width: 100px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.items {
+  border-radius: 30px;
+  width: 900px;
+  height: 270px;
+  display: block;
+  overflow: hidden;
+  transition: top 1s ease-out 0.5s;
+}
+
+.item {
+  width: 900px;
+  height: 270px;
+  background-color: papayawhip;
+  /*transition: all ease .6s;*/
+transition: top 1s ease-out 0.5s;  left: 0;
+  top: 0;
+}
+
+
